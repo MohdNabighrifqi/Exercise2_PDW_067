@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Kami</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    <div class="sidebar">
+        <h1>MUSIC</h1>
+        <ul>
+            <li><a href="beranda.html" class="nav-link"><i class="fas fa-music"></i> BERANDA</a></li>
+            <li><a href="hiphop.html" class="nav-link"><i class="fas fa-tape"></i> HIP-HOP</a></li>
+            <li><a href="blues.html" class="nav-link"><i class="fas fa-tape"></i> BLUES</a></li>
+            <li><a href="r&b.html" class="nav-link"><i class="fas fa-tape"></i> R&B FUNK SOUL</a></li>
+        </ul>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary" data-target="#about-page">
+                <i class="fas fa-info-circle"></i> Tentang Kami
+            </button>
+        </div> 
+    </div>
+    <div class="content">
+        <div id="form1" class="form-container active">
+           
+            <h2>MUSIC R&B FUNK SOUL</h2>
+            <p>Berikut beberapa musik yang termasuk kepada Genre R&B FUNK SOUL</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://albumart.besteveralbums.com/albumart/album_large_36502_5110acc4e3d61.jpg" alt="High Hopes" width="600px" height="800px">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4LIiMBSizxrlYxOHpcuRQk?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://i1.sndcdn.com/artworks-EadPmBYuyDUV-0-t500x500.jpg" alt="Blanket Of Sadness" width="600px" height="800px">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6l9qAa1aXXW47F9fvaKFuq?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://i1.sndcdn.com/artworks-000192680463-b2nczl-t500x500.jpg" alt="My Girl" width="600px" height="800px">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/745H5CctFr12Mo7cqa1BMH?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://i1.sndcdn.com/artworks-000119095566-r569ts-t500x500.jpg" alt="Rock With You" width="600px" height="800px">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5yxIenY5kSLlgTr3XGYw9p?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="about-page" class="page-container">
+            <h1>Tentang Kami</h1>
+            <p>Ini adalah halaman tentang kami.</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.btn-group-vertical button').click(function(){
+                $('.form-container, .page-container').removeClass('active');
+                $($(this).data('target')).addClass('active');
+            });
+        });
+        </script>
+</body>
+</html>

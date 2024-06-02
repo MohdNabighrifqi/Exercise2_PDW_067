@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Kami</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    <div class="sidebar">
+        <h1>MUSIC</h1>
+        <ul>
+            <li><a href="beranda.html" class="nav-link"><i class="fas fa-music"></i> BERANDA</a></li>
+            <li><a href="hiphop.html" class="nav-link"><i class="fas fa-tape"></i> HIP-HOP</a></li>
+            <li><a href="blues.html" class="nav-link"><i class="fas fa-tape"></i> BLUES</a></li>
+            <li><a href="r&b.html" class="nav-link"><i class="fas fa-tape"></i> R&B FUNK SOUL</a></li>
+        </ul>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary" data-target="#about-page">
+                <i class="fas fa-info-circle"></i> Tentang Kami
+            </button>
+        </div> 
+    </div>
+   
+</div>
+<div class="content">
+    <div id="form1" class="form-container active">
+        <h2>MUSIC HIP-HOP</h2>
+        <p>Berikut beberapa musik yang termasuk kepada Genre HIP-HOP</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://m.media-amazon.com/images/I/41pVopysGjL.jpg" alt="Red Moon" width= "600px" height="800px">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6odqveUIgvpWWvtANLcZpH?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <img src="https://i1.sndcdn.com/artworks-neAeMPnlc89Y7MEI-1QcxOQ-t500x500.jpg" alt="Fukumean" width= "600px" height="800px">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4rXLjWdF2ZZpXCVTfWcshS?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://cdns-images.dzcdn.net/images/cover/a2f66f08468fb9897019e82ffb7a5fcb/500x500.jpg" alt="Goosebump" width= "600px" height="800px">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6gBFPUFcJLzWGx4lenP6h2?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <img src="https://i1.sndcdn.com/artworks-000149348592-k2249q-t500x500.jpg" alt="Dat Stick" width= "600px" height="800px">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4bdJHQp90ymjEIkkYhcENB?utm_source=generator" width="82%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="about-page" class="page-container">
+        <h1>Tentang Kami</h1>
+        <p>Ini adalah halaman tentang kami.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.btn-group-vertical button').click(function(){
+            $('.form-container, .page-container').removeClass('active');
+            $($(this).data('target')).addClass('active');
+        });
+    });
+    </script>
+</body>
+</html>
